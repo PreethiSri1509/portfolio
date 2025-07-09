@@ -1,0 +1,224 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica';
+  background-color: #10182d;
+  color: white;
+}
+
+.page{
+  margin: auto;
+  width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.hspace{
+  height: 130px;
+}
+
+.header {
+  width: 1200px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  position: fixed ;
+  background-color:#10182d;
+}
+
+.headercol1 {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.headercol1 h3 {
+  margin-top: 40px;
+  font-size: 60px;
+}
+
+.headercol1 span {
+  color: #ffcc00;
+}
+
+.headercol2 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.headercol2 ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.headercol2 li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.headercol2 li a::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: white;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.headercol2 li a:hover::after {
+  width: 100%;
+}
+
+.header::after{
+    content: "";
+    width: 1200px;
+    height: 1px;
+    position: absolute;
+    transition: all 0.3s ease;
+    left: 5px;
+    bottom: 0;
+}
+
+.header.scrolled::after
+{
+    background-color:  rgb(97, 97, 97);
+}
+
+.hero {
+  width: 1200px;
+  margin: auto;
+}
+
+.home {
+  margin: auto;
+  display: flex;
+  gap: 330px;
+}
+
+.profile {
+  background-image: url(PreethiProfile.jpeg);
+  height: 250px;
+  width: 250px;
+  background-size: 125% 125%;
+  background-position: 50% 25%;
+  border-radius: 300px;
+  margin-top: 70px;
+}
+
+.hero h1 {
+  margin-top: 90px;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.hero h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 200;
+  width: 600px;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  color: rgb(199, 198, 198);
+}
+
+.projects, .about, .certifications {
+  width: 1200px;
+  margin: auto;
+}
+
+.projects h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.project-image {
+  display: none;
+  width: 400px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.about h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.about ul {
+  margin-top: 10px;
+  margin-left: 20px;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.certifications h2{
+    font-size: 40px;
+}
+
+.cert-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #283759;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cert-image {
+  display: none;
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #0a1025;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preethi's Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <div class="hspace"></div>
+    <header class="header">
+    <div class="headercol1">
+      <h3>Port<span>folio</span></h3>
+    </div>
+    <div class="headercol2">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="hero" id="home">
+    <div class="home">
+      <div class="name">
+        <h1>Preethi Sri</h1>
+        <h2>[ Developer ]</h2>
+        <p>A creative web development enthusiast dedicated to building responsive and visually compelling websites. Always striving to enhance digital experience through innovation.</p>
+      </div>
+      <div class="profile"></div>
+    </div>
+  </div>
+
+  <div class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3 onclick="toggleImage('insight')">InsightHub – A Student Feedback System</h3>
+      <p style="font-size: 18px ;margin-top: 15px;font-weight: 200; line-height: 25px; letter-spacing: 0.7px;color: rgb(199, 198, 198); ">InsightHub is a student feedback system for the CSE department at PSNA College. It was built using HTML, CSS, JavaScript, PHP, and MySQL. The system analyzes structured feedback to enhance curriculum and faculty performance and align education with industry and accreditation standards</p>
+      <img id="insight" class="project-image" src="project/insighthub.jpeg" alt="InsightHub Screenshot" />
+      <p><a style="font-size: 18px; color: #ffcc00;" href="https://drive.google.com/file/d/1Cvid3ysGaCVa5mGe9zFBYyDlLv6p0qmk/view?usp=drive_link" target="_blank" class="btn">View Published Research Paper</a></p>
+    </div>
+    <div class="project">
+      <h3 style="margin-top: 45px;" onclick="toggleImage('dotdash')">DOTDASH Protocol – IoT Morse Code Communicator</h3>
+      <p style="font-size: 18px ;margin-top: 15px;font-weight: 200; line-height: 25px; letter-spacing: 0.7px;color: rgb(199, 198, 198);">This project aims to design and develop a compact IoT-based Morse code transmitter that converts a given message into Morse code and transmits it through visual (LED) and audio (buzzer) signals. It also displays the character and its corresponding Morse code on an LCD screen, offering both visual and auditory feedback.</p>
+      <img id="dotdash" class="project-image" src="project/dotdash.jpeg" alt="DotDash Screenshot" />
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <h2>About Me</h2>
+    <p style="font-size: 18px ;margin-top: 15px;font-weight: 200; line-height: 25px; letter-spacing: 0.7px;color: rgb(199, 198, 198) ;">I am a goal-oriented and enthusiastic computer science student seeking a career opportunity to get launched. I want to work with an energetic team, to learn from professionals who can guide me in the best way possible and thrive in a collaborative pursuit of both personal and organizational objectives.</p>
+
+    <h3>Education</h3>
+    <ul>
+      <li><p style="font-size: 25px; margin-bottom: 0px; color: white;"><strong>Bachelor of Engineering in Computer Science and Engineering</strong></p><p style="font-size: 18px ;margin-top: 0px;font-weight: 200; line-height: 25px; letter-spacing: 0.7px;">PSNA College of Engineering and Technology<br />CGPA: 9.05 (Present)</p></li>
+      <li><p style="font-size: 25px; margin-bottom: 0px; color: white;"><strong>HSC</strong></p><p style="font-size: 18px ;margin-top: 0px;font-weight: 200; line-height: 25px; letter-spacing: 0.7px;">Oxford Matriculation Higher Secondary School<br />Percentage: 84.5%</p></li>
+      <li><p style="font-size: 25px; margin-bottom: 0px; color: white;"><strong>SSLC</strong></p><p style="font-size: 18px ;margin-top: 0px;font-weight: 200; line-height: 25px; letter-spacing: 0.7px;">Oxford Matriculation Higher Secondary School<br />Percentage: 86.8%</p></li>
+    </ul>
+
+    <h3>Experience</h3>
+    <h4 style="font-size: 25px;margin-bottom: 0px;"><strong>MERN Stack Development Internship - Phoenix Softech (June 2025)</strong></h4>
+    <ul style="font-size: 18px ;margin-top: 0px;font-weight: 200; line-height: 25px; letter-spacing: 0.7px;">
+      <li><p style="margin-bottom: 0px;">Hands-on experience on HTML, CSS & JS</p></li>
+      <li><p style="margin-top:0px ; margin-bottom: 0px;">Worked on Node, Express & React JS frameworks</p></li>
+      <li><p style="margin-top: 0px;">Hands-on experience on HTML, CSS & JS</p></li>
+    </ul>
+    <h4 style="font-size: 25px;margin-bottom: 0px;"><strong>Published Research paper in IJIRT</strong></h4>
+    <ul style="font-size: 18px ;margin-top: 0px;font-weight: 200; line-height: 25px; letter-spacing: 0.7px;">
+      <li><p style="margin-top: 20px;">Published a research paper titled “INSIGHTHUB – A Student Feedback System” in IJIRT</p></li>
+    </ul>
+    <h4 style="font-size: 25px;margin-bottom: 0px;"><strong>Python Internship – CodeBind Technologies (July 2024)</strong></h4>
+    <ul style="font-size: 18px ;margin-top: 0px;font-weight: 200; line-height: 25px; letter-spacing: 0.7px;">
+      <li><p style="margin-bottom: 0px;">Undergone inplant training in Python</p></li>
+      <li><p style="margin-top:0px ; margin-bottom: 0px;">Developed a standalone color game application using core Python concepts</p></li>
+      <li><p style="margin-top:0px ; margin-bottom: 0px;">Successfully completed corporate-level training</p></li>
+      <li><p style="margin-top: 0px;">Workshop on Artificial Intelligence</p></li>
+    </ul>
+    <h4 style="font-size: 25px;margin-bottom: 0px;"><strong>Workshop on IoT & Embedded Systems (Sep 2023)</strong></h4>
+    <ul style="font-size: 18px ;margin-top: 0px;font-weight: 200; line-height: 25px; letter-spacing: 0.7px;">
+      <li><p style="margin-top: 20px;">Project development in IoT and exposure to embedded systems</p></li>    
+    </ul>
+
+
+  <div class="certifications" id="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-buttons" style="font-size: 25px;">
+      <button onclick="showCert('java')">Java</button>
+      <button onclick="showCert('cloud')">Cloud Security</button>
+      <button onclick="showCert('sql')">Oracle SQL</button>
+      <button onclick="showCert('soft')">Soft Skills</button>
+      <button onclick="showCert('python')">Python</button>
+      <button onclick="showCert('c')">C Programming</button>
+    </div>
+    <div class="certificate" >
+      <img id="java" class="cert-image" src="certificate/java.png" alt="Java Certificate" />
+      <img id="cloud" class="cert-image" src="certificate/cloud.png" alt="Cloud Certificate" />
+      <img id="sql" class="cert-image" src="certificate/sql.png" alt="SQL Certificate" />
+      <img id="soft" class="cert-image" src="certificate/softskill.png" alt="Soft Skills Certificate" />
+      <img id="python" class="cert-image" src="certificate/python.png" alt="Python Certificate" />
+      <img id="c" class="cert-image" src="certificate/c.jpeg" alt="C Certificate" />
+    </div>
+  </div>
+
+  <footer class="footer" style="font-size: 25px;">
+    <p><a href="https://drive.google.com/file/d/1ULu52QgABQXqF-eXFYZWULObHB91i-7v/view?usp=drive_link" target="_blank" class="btn">View Resume</a></p>
+    <p>📧 <a href="mailto:preethisri2k4@gmail.com">preethisri2k4@gmail.com</a></p>
+    <p>
+      🔗 <a href="https://www.linkedin.com/in/preethi-sri-bb5668264/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/PreethiSri1509" target="_blank">GitHub</a>
+    </p>
+  </footer>
+  </div> 
+</body>
+</html>
